@@ -22,8 +22,6 @@ export class MetaDataDialogComponent {
   }
 
   onFormSubmit(): void {
-    console.log(this.metaDataForm, "test");
-    
     if (this.metaDataForm.invalid)
       return;
 

@@ -325,7 +325,7 @@
       <!-- <mat-card-subtitle>Start</mat-card-subtitle> -->
     </mat-card-header>
     <mat-card-content>
-      <form [formGroup]="dynamicForm" (submit)="onFormSubmit()">
+      <form [formGroup]="dynamicForm" (submit)="onFormSubmit()" id="dynamic-form">
 
 
         <div *ngFor="let field of formFieldMetaData; let fieldIndex = index">
@@ -358,7 +358,7 @@
 
     <mat-card-actions align="end">
       <button mat-raised-button color="accent" type="button" (click)="openMetaDataDialog()">Add new field</button>
-      <button mat-raised-button  type="submit" color="primary" >Submit</button>
+      <button mat-raised-button  type="submit" color="primary" form="dynamic-form">Submit</button>
     </mat-card-actions>
   </mat-card>
 
